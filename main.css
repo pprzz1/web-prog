@@ -27,7 +27,7 @@ header {
 
 .stylep1{
     color: rgb(203, 46, 35);
-    font-size: 20px;
+    font-size: 22px;
     text-indent: 1.25cm;
     padding: 3px;
     line-height: 1.5em;
@@ -38,7 +38,7 @@ header {
 
 .stylep2{
     color: rgb(221, 31, 228);
-    font-size: 16px;
+    font-size: 20px;
     text-indent: 2cm;
     padding: 1px;
     line-height: 1.5em;
@@ -48,7 +48,7 @@ header {
 
 .stylep3{
     color: rgba(228, 31, 113, 0.606);
-    font-size: 12px;
+    font-size: 23px;
     text-indent: 0.5cm;
     padding: 0px;
     line-height: 1.5em;
@@ -58,7 +58,7 @@ header {
 
 .stylep4{
     color: rgba(41, 35, 216, 0.606);
-    font-size: 11px;
+    font-size: 19px;
     text-indent: 1cm;
     padding: 3px;
     line-height: 1.5em;
@@ -68,7 +68,7 @@ header {
 
 .stylep5{
     color: rgba(222, 129, 24, 0.86);
-    font-size: 15px;
+    font-size: 22px;
     text-indent: 1cm;
     padding: 2px;
     line-height: 1.5em;
