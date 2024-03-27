@@ -29,6 +29,7 @@ header {
     color: rgb(203, 46, 35);
     font-size: 22px;
     text-indent: 1.25cm;
+    text-align: right;
     padding: 3px;
     line-height: 1.5em;
     margin: 5px;
@@ -40,6 +41,7 @@ header {
     color: rgb(221, 31, 228);
     font-size: 20px;
     text-indent: 2cm;
+    text-align: justify;
     padding: 1px;
     line-height: 1.5em;
     margin: 5px;
@@ -92,10 +94,10 @@ header {
 }
 .author{
     font-size: 30px;
-    text-align: left;
+    text-align: right;
     opacity: 0.8;
     margin-top: 30px;
-    margin-left: 50%;
+    margin-right: 50%;
 }
 
 .citation2{
@@ -111,6 +113,7 @@ header {
     font-size: 30px;
     font-weight: bold;
     text-align: right;
+    margin-right: 10%;
 }
 .author2{
     font-size: 24px;
