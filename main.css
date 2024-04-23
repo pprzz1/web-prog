@@ -28,7 +28,7 @@ header {
 a {
     color:rgb(20, 153, 163);
     text-decoration: none;
-    transition: 1s 2s;
+    transition: 1s;
 }
 
 a:link {
@@ -53,123 +53,14 @@ a:active {
     opacity: 0.3s;
 }
 
-.stylep1{
-    color: rgb(203, 46, 35);
-    font-size: 22px;
-    text-indent: 1.25cm;
-    text-align: right;
-    padding: 3px;
-    line-height: 1.5em;
-    margin: 5px;
-    text-shadow: 4px 2px 3px rgba(29, 29, 56, 0.5);
-    
+div.menu {
+    border: 7px solid green;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
 }
 
-.stylep2{
-    color: rgb(221, 31, 228);
-    font-size: 20px;
-    text-indent: 2cm;
-    text-align: justify;
-    padding: 1px;
-    line-height: 1.5em;
-    margin: 5px;
-    text-shadow: 4px 2px 3px rgba(181, 14, 14, 0.563); 
+div.menu:hover {
+    background-color: rgb(90, 82, 82);
+    box-shadow: 0 0 15px black
 }
-
-.stylep3{
-    color: rgba(228, 31, 113, 0.606);
-    font-size: 23px;
-    text-indent: 0.5cm;
-    padding: 0px;
-    line-height: 1.5em;
-    margin: 5px;
-    text-shadow: 1px 1px 4px rgba(86, 20, 20, 0.515); 
-}
-
-.stylep4{
-    color: rgba(41, 35, 216, 0.606);
-    font-size: 19px;
-    text-indent: 1cm;
-    padding: 3px;
-    line-height: 1.5em;
-    margin: 2px;
-    text-shadow: 1px 1px 4px rgba(86, 20, 20, 0.515); 
-}
-
-.stylep5{
-    color: rgba(222, 129, 24, 0.86);
-    font-size: 22px;
-    text-indent: 1cm;
-    padding: 2px;
-    line-height: 1.5em;
-    margin: 3px;
-    text-shadow: 3px 4px 4px rgba(86, 20, 20, 0.515); 
-}
-
-.citation{
-    border: 1px solid red;
-    padding: 20px;
-    border-radius:20px ;
-    margin: 20px;
-    box-shadow: 10px 10px 5px #0002;
-    background-color: white;
-    background: linear-gradient(to bottom ,red, orange, yellow, green ,blue, purple);
-}
-.text{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-.author{
-    font-size: 30px;
-    text-align: right;
-    opacity: 0.8;
-    margin-top: 30px;
-    margin-right: 50%;
-}
-
-.citation2{
-    border: 1px solid rgb(0, 255, 42);
-    padding: 5px;
-    border-radius:10px ;
-    margin: 30px;
-    box-shadow: 10px 10px 5px #0002;
-    background-color: white;
-    background: linear-gradient(to right ,red, yellow,blue, purple);
-}
-.text2{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: right;
-    margin-right: 10%;
-}
-.author2{
-    font-size: 24px;
-    text-align: left;
-    opacity: 0.8;
-    margin-top: 30px;
-    margin-left: 50%;
-}
-
-.citation3{
-    border: 1px solid rgb(47, 0, 255);
-    padding: 24px;
-    border-radius:25px ;
-    margin: 24px;
-    box-shadow: 10px 10px 5px #0002;
-    background-color: white;
-    background: linear-gradient(to left, orange, yellow, blue, red);
-}
-.text3{
-    font-size: 32px;
-    font-weight: bold;
-    text-align: left;
-}
-.author3{
-    font-size: 33px;
-    text-align: left;
-    opacity: 0.8;
-    margin-top: 30px;
-    margin-left: 50%;
-}
-
