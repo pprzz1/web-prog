@@ -28,6 +28,7 @@ header {
 a {
     color:rgb(20, 153, 163);
     text-decoration: none;
+    transition: 1s 2s;
 }
 
 a:link {
@@ -42,13 +43,14 @@ a:visited {
 
 a:hover {
     color: red;
+    font-size: 18px;
     box-shadow: 4px 4px 6px black;
     text-decoration: underline;
 }
 
 a:active {
     color: black;
-    opacity: 0.3;
+    opacity: 0.3s;
 }
 
 .stylep1{
