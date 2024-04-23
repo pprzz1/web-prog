@@ -25,6 +25,32 @@ header {
     margin: 0px;
 }
 
+a {
+    color:rgb(20, 153, 163);
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    background: linear-gradient(to bottom ,red,blue, purple);
+}
+
+a:visited {
+    color: violet;
+    background: linear-gradient(to right , yellow, blue, red, green);
+}
+
+a:hover {
+    color: red;
+    box-shadow: 4px 4px 6px black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+    opacity: 0.3;
+}
+
 .stylep1{
     color: rgb(203, 46, 35);
     font-size: 22px;
