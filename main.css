@@ -10,12 +10,17 @@ footer {
     color: black;
     font-family: Arial;
     margin: 0px;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 main {
     color: black;
     font-family: Arial;
-    margin: 5px;
+    margin: 10px 20px 45px;
 }
 
 header {
