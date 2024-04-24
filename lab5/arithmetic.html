@@ -15,6 +15,24 @@
             let result = a + b;
             alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
         }
+        function showDiff() {
+            let a = parseInt(numberA.value);
+            let b = parseInt(numberB.value);
+            let result = a - b;
+            alert('Разность ' + a + ' и ' + b + ' равна ' + result);
+        }
+        function showMult() {
+            let a = parseInt(numberA.value);
+            let b = parseInt(numberB.value);
+            let result = a * b;
+            alert('Произведение ' + a + ' и ' + b + ' равно ' + result);
+        }
+        function showDiv() {
+            let a = parseInt(numberA.value);
+            let b = parseInt(numberB.value);
+            let result = a / b;
+            alert('Деление ' + a + ' и ' + b + ' равно ' + result);
+        }
         function showAuthor() {
             let author = "Автор страницы:\nБезделов Рома Артемович";
             alert(author);
@@ -27,9 +45,10 @@
     <style>
         .message {
             cursor: pointer;
-            width: 200px;
+            width: 250px;
             height: 40px;
             background-color: aquamarine;
+            margin: 5px;
             border: 2px solid red;
             border-radius: 10px;
             text-align: center;
@@ -46,6 +65,9 @@
         <label>Первое число: <input type="number" value="5154" id="numberA"></label><br>
         <label>Второе число: <input type="number" value="7981" id="numberB"></label><br>
         <div class="message" onclick="showSum()">Найти сумму числе</div>
+        <div class="message" onclick="showDiff()">Найти разность числе</div>
+        <div class="message" onclick="showMult()">Найти произведение числе</div>
+        <div class="message" onclick="showDiv()">Найти деление числе</div>
         <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
    </main>
 
