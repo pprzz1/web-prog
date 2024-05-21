@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Безделов Рома Артемович. Корзина товаров </title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            margin: 0;
+        }
+
+        .cart {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(255, 167, 179, 0.89);
+            border: 2px solid;
+            border-radius: 5px;
+            text-align: left;
+            padding: 20px;
+            position: relative; 
+        }
+        </style>
+            
+        <script>
+            function Summ() {
+                let inputA = document.getElementById('numA');
+                let inputB = document.getElementById('numB');
+                let inputC = document.getElementById('numC');
+                let inputD = document.getElementById('numD');
+                let inputE = document.getElementById('numE');
+                let inputF = document.getElementById('numF'); 
+                let inputZ = document.getElementById('numZ'); 
+                let balanceInput = document.getElementById('balance');
+
+                let a = parseInt(inputA.value);
+                let b = parseInt(inputB.value);
+                let c = parseInt(inputC.value);
+                let d = parseInt(inputD.value);
+                let e = parseInt(inputE.value); 
+                let f = parseInt(inputF.value); 
+                let z = parseInt(inputZ.value);
+                let balance = parseFloat(balanceInput.value);
+
+                if (isNaN(a)) a = 0;
+                if (isNaN(b)) b = 0;
+                if (isNaN(c)) c = 0;
+                if (isNaN(d)) d = 0;
+                if (isNaN(e)) e = 0; 
+                if (isNaN(f)) f = 0; 
+                if (isNaN(z)) z = 0; 
+                if (isNaN(balance)) balance = 0;
+
+                let result = a * 300 + b * 350 + c * 400 + d * 550 + e * 100 + f * 90 + z * 200; 
+
+                if (result == 0) document.getElementById('sum').innerHTML = "Необходимо выбрать хотя бы один товар";
+                else if (result < 0) document.getElementById('sum').innerHTML = "Введено отрицательное значение";
+                else if (result > balance) document.getElementById('sum').innerHTML = "Недостаточно средств!";
+                else document.getElementById('sum').innerHTML = 'Сумма продуктов = ' + result + ' рублей';
+            }
+    
+            function nul() {
+                document.getElementById('numA').value = '';
+                document.getElementById('numB').value = '';
+                document.getElementById('numC').value = '';
+                document.getElementById('numD').value = '';
+                document.getElementById('numE').value = ''; 
+                document.getElementById('numF').value = '';
+                document.getElementById('numZ').value = '';  
+                document.getElementById('balance').value = '';
+                document.getElementById('sum').innerHTML = '';
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            НГТУ, ФБ, Лабораторная работа 6
+        </header>
+
+        <main>
+            <div class="cart">
+                <h1>Корзина товаров</h1>
+                <h2>Мой баланс</h2>
+                <input type="number" id="balance" placeholder="Введите баланс" min="0">
+                <table border="1" width="100%" style="font-weight: bold;">
+                    <tr>
+                        <th>Название</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                    </tr>
+                    <tr>
+                        <td>Колбаса</td>
+                        <td>300р/шт</td>
+                        <td><input type="number" id="numA" placeholder="Введите кол-во в штуках" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Сыр</td>
+                        <td>350р/шт</td>
+                        <td><input type="number" id="numB" placeholder="Введите кол-во в штуках" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Сосиски</td>
+                        <td>400р/кг</td>
+                        <td><input type="number" id="numC" placeholder="Введите кол-во в кг" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Масло, 300гр</td>
+                        <td>550р/шт</td>
+                        <td><input type="number" id="numD" placeholder="Введите кол-во в штуках" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Молоко</td>
+                        <td>100р/л</td>
+                        <td><input type="number" id="numE" placeholder="Введите кол-во в литрах" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Сметана</td>
+                        <td>90р/шт</td>
+                        <td><input type="number" id="numF" placeholder="Введите кол-во в штуках" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Яблоки</td>
+                        <td>200р/кг</td>
+                        <td><input type="number" id="numZ" placeholder="Введите кол-во в кг" min="0"></td>
+                    </tr>
+                    
+                </table>
+                <input type="button" value="Рассчитать сумму" onclick="Summ()">
+                <input type="button" value="Очистить" onclick="nul()"><br>
+                <label id="sum"></label>
+            </div>
+        </main>
+
+        <footer> 
+            &copy; Безделов Рома, ФБИ-22, 2 курс, 2024
+        </footer>
+    </body>
+</html>
