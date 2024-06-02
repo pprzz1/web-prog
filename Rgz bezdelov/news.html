@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="nav">
+      <img class="logo" src="images/ostin-logo.png">
+      <a class="active" href="index.html">О компании</a>
+      <a href="news.html">Новости</a>
+      <a href="course.html">Курс валют</a>
+      <a href="contact.html">Контактные данные</a>
+      <a href="video.html">Видео</a>
+    </div>
+    <div class="content">
+      <div id="news1">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk_clp_luchshie_futbolki_sezona.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Узнай как сочетать разные вещи</p>
+            <div id="openNews1" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(1)" id="btno1"> Подробнее </button>
+            <button class="card_btn" onclick="newsClose(1)" id='btnc1' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news2">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk__deti__280524__razvod.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Весь этот текст придумал я и надеюс на хорошую оценку, ну пжалуста!!!:((</p>
+            <div id="openNews2" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(2)" id="btno2"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(2)" id='btnc2' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news3">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk_blog_safari_170524.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Узнай как сочетать разные вещи</p>
+            <div id="openNews3" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(3)" id="btno3"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(3)" id='btnc3' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news4">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk_blog_safari_170524.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Весь этот текст придумал я и надеюс на хорошую оценку, ну пжалуста!!!:((</p>
+            <div id="openNews4" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+              <p>Автор: ромчик</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(4)" id="btno4"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(4)" id='btnc4' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news5">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk_bruchnyi_kostum_blog_170524.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Узнай как сочетать разные вещи</p>
+            <div id="openNews5" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(5)" id="btno5"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(5)" id='btnc5' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news6">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk__bomber__150524__razvod.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Весь этот текст придумал я и надеюс на хорошую оценку, ну пжалуста!!!:((</p>
+            <div id="openNews6" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(6)" id="btno6"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(6)" id='btnc6' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news7">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk__bomber__150524__razvod.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Весь этот текст придумал я и надеюс на хорошую оценку, ну пжалуста!!!:((</p>
+            <div id="openNews7" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(7)" id="btno7"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(7)" id='btnc7' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news8">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk__djinsovaya_kurtka__030524__razvod.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Узнай как сочетать разные вещи</p>
+            <div id="openNews8" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(8)" id="btno8"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(8)" id='btnc8' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news9">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk_clp_luchshie_futbolki_sezona.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Весь этот текст придумал я и надеюс на хорошую оценку, ну пжалуста!!!:(( </p>
+            <div id="openNews9" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(9)" id="btno9"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(9)" id='btnc9' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div id="news10">
+      <ul class="cards">
+        <li class="cards_items">
+          <article class="card">
+            <div class="card_image">
+              <img src="https://img.ostin.com/upload/content/contentgate/prod/ru_ostin/clp/desk_clp_luchshie_futbolki_sezona.jpg" alt="">
+            </div>
+            <h3 class="card_title">Все о моде</h3>
+            <p class="card_desc">Узнай как сочетать разные вещи</p>
+            <div id="openNews10" style="display: none;">
+              <p>БЛАБЛАБЛАБЛАБЛАБЛА</p>
+            </div>
+            <button class="card_btn" onclick="newsOpen(10)" id="btno10"> Подробнее... </button>
+            <button class="card_btn" onclick="newsClose(10)" id='btnc10' style="display: none;"> Скрыть </button>
+          </article>
+        </li>
+      </ul>
+    </div>  
+    </div> 
+    
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <img class="logo" src="images/ostin-logo.png">
+        <a class="active" href="index.html">О компании</a>
+        <a href="news.html">Новости</a>
+        <a href="course.html">Курс валют</a>
+        <a href="contact.html">Контактные данные</a>
+        <a href="video.html">Видео</a>
+    </div>
+    <div class="calc">
+        <h1>Калькулятор валют</h1>
+        <p>Актуальный курс: <span id="audToRubRate"></span></p>
+        <input type="number" id="amount" placeholder="Введите сумму">
+        <select id="direction">
+            <option value="audToRub">AUD в RUB</option>
+            <option value="rubToAud">RUB в AUD</option>
+        </select>
+        <button id="convertButton">Перевести</button>
+        <p id="result"></p>
+    </div> 
+    
+
+  <script src="currency_calculator.js"></script>
+</body>
+</html>
